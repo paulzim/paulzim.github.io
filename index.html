@@ -34,13 +34,28 @@
             flex: 1;
             padding-right: 20px;
         }
-        .picture img {
-            max-width: 300px;
-            height: auto;
-        }
         .resized-image { 
-            width: 150px; 
+            width: 450px; 
             height: auto; /* This keeps the aspect ratio intact */ 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+        } 
+        td { 
+            padding: 10px; border: 1px solid #ddd; 
+        } 
+        .text-box { 
+            width: 50%; /* Adjust the width as needed */ 
+            height: 200px; /* Adjust the height as needed */ 
+            overflow: auto; /* Adds scrollbars if content overflows */ 
+        } 
+        .picture { 
+            text-align: center; 
+            width: 50%; /* Ensure the picture takes the rest of the space */ 
+        } img { 
+            max-width: 100%; /* Ensures the image scales within the cell */ 
+            height: auto;
         }
     </style>
 </head>
@@ -61,8 +76,12 @@
     </div>
     <table>
         <tr>
-          <td>I'm a leader who has a focus on content strategy and community engagement, especially in the world of developer relations. I've led global teams, championed developer advocacy, and juggled cross-functional projects like a pro. I’m all about building scalable systems for content and community. I'm into crafting and rolling out strategies to create lively, engaged communities, and I love helping developers find the tools and resources they need to thrive.</td>
-          <td><img src="files/paul.jpg" alt="Paul Zimmerman" class="resized-image"></td>
+          <td class="text-box">
+            <p>I'm a leader who has a focus on content strategy and community engagement, especially in the world of developer relations. I've led global teams, championed developer advocacy, and juggled cross-functional projects like a pro. I’m all about building scalable systems for content and community. I'm into crafting and rolling out strategies to create lively, engaged communities, and I love helping developers find the tools and resources they need to thrive.</p>
+        </td>
+          <td class="picture">
+            <img src="files/paul.jpg" alt="Paul Zimmerman">
+        </td>
         </tr>
       </table>
 </body>
