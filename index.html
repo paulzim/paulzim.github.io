@@ -29,7 +29,7 @@
         }
         .container {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
         }
         .content {
             flex: 1;
@@ -56,6 +56,9 @@
             max-width: 100%; /* Ensures the image scales within the cell */ 
             height: auto;
         }
+        .resume-button {
+            margin-left: 25%;
+        }
     </style>
 </head>
 <body>
@@ -70,11 +73,14 @@
         <div class="content">
             <h1>Paul Zimmerman</h1>
             <h2>Content | Community | Creativity</h2>
+            <br>
             <p>I'm a leader who has a focus on content strategy and community engagement, especially in the world of developer relations. I've led global teams, championed developer advocacy, and juggled cross-functional projects. I’m all about building scalable systems for content and community. I'm into crafting and rolling out strategies to create lively, engaged communities, and I love helping developers find the tools and resources they need to thrive.</p>
-            <p><a href="files\Zimmerman_Paul_Tech.pdf" TARGET="_blank"><img src="files\Resume button.png" alt="resume" width="300px"></a></p> 
+            <br>
+            <p class="resume-button"><a href="files/Zimmerman_Paul_Tech.pdf" target="_blank"><img src="files/Resume button.png" alt="resume" width="300px"></a></p> 
         </div>
         <div class="picture">
             <img src="files/paul2.jpg" alt="Paul Zimmerman" class="resized-image">
         </div>
+    </div>
 </body>
 </html>
