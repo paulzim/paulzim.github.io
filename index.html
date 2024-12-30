@@ -15,53 +15,43 @@
         .navbar {
             background-color: #333;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
         }
         .navbar a {
-            float: left;
             display: block;
             color: #f2f2f2;
             text-align: center;
-            padding: 14px 16px;
+            padding: 14px 20px;
             text-decoration: none;
+            transition: background-color 0.3s;
         }
         .navbar a:hover {
             background-color: #ddd;
             color: black;
         }
         .container {
+            max-width: 900px;
+            margin: 0 auto;
             display: flex;
-            align-items: flex-start;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
         .content {
             flex: 1;
             padding-right: 20px;
-            max-width: 800px;
         }
-        .resized-image { 
-            width: 450px; 
-            height: auto; /* Keeps the aspect ratio intact */ 
+        img {
+            max-width: 100%;
+            border-radius: 8px;
         }
-        table { 
-            width: 75%; 
-            border-collapse: collapse;
-        }  
-        .text-box { 
-            width: 67%; /* Adjust the width as needed */ 
-            height: 200px; /* Adjust the height as needed */ 
-            overflow: auto; /* Adds scrollbars if content overflows */ 
-        } 
-        .picture { 
-            text-align: center; 
-            flex: 1; /* Ensure the picture takes the rest of the space */ 
-        } 
-        img { 
-            max-width: 100%; /* Ensures the image scales within the cell */ 
-            height: auto;
+        .picture {
+            text-align: center;
+            flex: 1;
+            padding: 20px;
         }
         .resume-button {
-            margin-top: 20px; /* Add some space above the button */
-            text-align: center; /* Center the button */
+            margin-top: 20px;
         }
         .section {
             margin-bottom: 40px;
@@ -69,10 +59,14 @@
         h1, h2 {
             color: #072035;
         }
+        ul {
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
+        <a href="index.html">Home</a>
         <a href="content.html">Content</a>
         <a href="community.html">Community</a>
         <a href="leadership.html">Leadership</a>
@@ -95,35 +89,30 @@
             </p>
             <div class="section">
                 <h2>My Journey</h2>
-
                 <h3>Content is the Foundation</h3>
                 <p>
                     My career began as a technical writer, developing clear and engaging documentation for emerging technologies.
                     At companies like Octel Communications and Lucent Technologies, I honed my ability to translate complex ideas into
                     accessible content and began managing teams to scale this work.
                 </p>
-
                 <h3>Pioneering New Platforms at Cisco</h3>
                 <p>
                     At Cisco, I took on program management roles where I launched groundbreaking projects like Cisco’s first collaborative
                     documentation platform, the DocWiki. These efforts taught me the power of collaboration and community-building,
                     laying the foundation for my later work in developer relations.
                 </p>
-
                 <h3>Elevating Developer Success</h3>
                 <p>
                     In 2015, I became Senior Manager of Developer Success, leading global teams to provide support for developers using
                     Cisco’s platforms. I implemented new CRM systems, supported the launch of technical certifications, and earned the
                     Pioneer Award for the DevNet Sandbox project.
                 </p>
-
                 <h3>Building Vibrant Communities</h3>
                 <p>
                     As Senior Manager of Developer Community Engagement, I focused on creating spaces where developers could thrive.
                     From revamping forums and launching new technical hubs to piloting in-person meetups, I fostered connections that
                     continue to drive innovation.
                 </p>
-
                 <h3>Leading with Vision in Developer Advocacy</h3>
                 <p>
                     Most recently, I led a team of developer advocates to bridge Cisco’s technologies with the broader developer ecosystem.
@@ -131,7 +120,6 @@
                     partnerships with local communities.
                 </p>
             </div>
-
             <div class="section">
                 <h2>Why I Do What I Do</h2>
                 <p>
@@ -139,7 +127,6 @@
                     that great content, thoughtful support, and vibrant communities are the keys to helping developers succeed.
                 </p>
             </div>
-
             <div class="section">
                 <h2>Achievements at a Glance</h2>
                 <ul>
@@ -153,8 +140,8 @@
             </div>
         </div>
         <div class="picture">
-            <img src="files/paul2.jpg" alt="Paul Zimmerman" class="resized-image">
-            <p class="resume-button"><a href="files/Zimmerman_Paul_Tech.pdf" target="_blank"><img src="files/Resume button.png" alt="resume" width="300px"></a></p> 
+            <img src="files/paul2.jpg" alt="Paul Zimmerman">
+            <p class="resume-button"><a href="files/Zimmerman_Paul_Tech.pdf" target="_blank"><img src="files/Resume button.png" alt="Resume" width="300px"></a></p>
         </div>
     </div>
 </body>
