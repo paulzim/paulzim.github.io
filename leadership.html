@@ -1,53 +1,70 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-   <meta charset="UTF-8"> 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <title>Paul Zimmerman - Leadership</title> 
-   <style> 
-    body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-            background-color: #DCDCDC
-        } 
-    h1 { 
-           color: #333; 
-        } 
-    p { 
-            line-height: 1.6; 
-        } 
-       a { 
-            color: #0066cc; 
-        } 
-    .navbar {
-        background-color: #333;
-        overflow: hidden;
-    }
-    .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    .container {
-        display: flex;
-        align-items: center;
-    }
-    .content {
-        flex: 1;
-        padding-right: 20px;
-    }
-    img { 
-        max-width: 400px; /* Ensures the image scales within the cell */ 
-        height: auto;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Paul Zimmerman - Leadership</title>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #DCDCDC;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+            text-align: left;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #0066cc;
+        }
+    </style>
 </head>
 <body>
 <div class="navbar">
@@ -58,11 +75,50 @@
     <a href="developer-relations.html">Developer Relations</a>
     <a href="music.html">Music</a>
 </div>
+
+<div class="container">
     <h1>Leadership</h1>
-    <p>While I enjoy creating things as an individual contributor, I really found my stride in leadership roles. I first became a people manager in my 20s, at Octel Communications. I later became a people manager again at Cisco, and had several different leadership role during my tenure. No matter what kind of team I manage, I have similar goals. I believe in leading from the trenches. I am happy to get my hands dirty along with my team. Compassion, continuous learning, and support for my team are my guiding principles. </p>
-    <p>I also really enjoy program management. Running a program involves many of the same skills as running a people organization, and in some respects, can be even more impactful. I got my PMP (cert number 1225518) back in 2008, and have continued to learn about how to run successful programs. </p>
-    <img src="files\Chatting with Chuck.png" alt="Chatting with Chuck">
-    <img src="files\pioneer award 2017.jpg" alt="Pioneer Award 2017">
-    <img src="files\Habitat for Humanity 2017.jpg" alt="Habitat for Humanity 2017 2017">
+    <p>
+        While I enjoy creating things as an individual contributor, I truly found my stride in leadership roles. My first
+        experience as a people manager came in my 20s at Octel Communications, where I learned how to support and guide a team
+        to success. Later at Cisco, I embraced several different leadership roles, each offering unique challenges and opportunities.
+    </p>
+    <p>
+        No matter the team I manage, I always lead with <span class="highlight">compassion</span>, a commitment to <span class="highlight">continuous learning</span>,
+        and a focus on <span class="highlight">supporting my team</span>. I believe in "leading from the trenches"—working alongside
+        my team to understand their challenges and celebrate their successes.
+    </p>
+
+    <h2>Program Management</h2>
+    <p>
+        Running programs is another passion of mine. Many of the skills I use as a people manager also apply to successful
+        program management. After earning my <a href="https://www.pmi.org/certifications/project-management-pmp">PMP certification</a>
+        (cert number 1225518) in 2008, I’ve continually refined my skills in program strategy, execution, and impact measurement.
+    </p>
+    <p>
+        One of my proudest achievements is leading the team that earned Cisco’s <strong>Pioneer Award</strong> in 2017 for
+        the innovative DevNet Sandbox. This program empowered developers by providing hands-on access to Cisco’s technology, driving
+        engagement and innovation in the developer community.
+    </p>
+
+    <h2>Leadership in Action</h2>
+    <p>
+        Beyond my work at the office, I’ve had the privilege of leading initiatives that make a difference in the community.
+        For example, I led a team of Cisco employees in a <a href="https://www.habitat.org/">Habitat for Humanity</a> project in 2017,
+        where we worked together to build homes and strengthen our bond as colleagues and friends.
+    </p>
+
+    <div class="image-grid">
+        <img src="files/Chatting with Chuck.png" alt="Chatting with Chuck">
+        <img src="files/pioneer award 2017.jpg" alt="Pioneer Award 2017">
+        <img src="files/Habitat for Humanity 2017.jpg" alt="Habitat for Humanity 2017">
+    </div>
+
+    <p>
+        Leadership is about more than titles—it’s about inspiring others, creating a vision, and fostering an environment
+        where everyone can thrive. I’m excited to continue leading teams, programs, and initiatives that make a positive impact.
+    </p>
+</div>
+
 </body>
 </html>
