@@ -1,81 +1,125 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-   <meta charset="UTF-8"> 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <title>Paul Zimmerman - Developer Relations</title> 
-   <style> 
-    body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-            background-color: #DCDCDC
-        } 
-    h1 { 
-           color: #333; 
-        } 
-    p { 
-            line-height: 1.6; 
-        } 
-       a { 
-            color: #0066cc; 
-        } 
-    .navbar {
-        background-color: #333;
-        overflow: hidden;
-    }
-    .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    .container {
-        display: flex;
-        align-items: center;
-    }
-    .content {
-        flex: 1;
-        padding-right: 20px;
-    }
-    img { 
-        width: 60%; /* Ensures the image scales within the cell */ 
-        max-width: 400px; /* Ensures the image doesn't get too large */
-        height: auto;
-    }
-    .large-image { 
-        width: 80%; /* Adjust the width as needed */ 
-        max-width: 600px; /* Ensures the image doesn't get too large */
-        height: auto;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Paul Zimmerman - Developer Relations</title>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #DCDCDC;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+            text-align: left;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="content.html">Content</a>
-    <a href="community.html">Community</a>
-    <a href="leadership.html">Leadership</a>
-    <a href="developer-relations.html">Developer Relations</a>
-    <a href="music.html">Music</a>
-</div>
-    <p>My last decade has been very focused on developer relations. I have led teams in most aspects of DevRel</p>
-    <h2>Developer Content</h2>
-    <p>After working for years doing product documentation, I made the change to developer docs. At first, I managed a team in the central networking business unit doing internal developer docs, but with the release of the onePK project, my team and I began working for the world of external developers. Along the way, I led the implementation of a couple of different publishing systems, including a DITA-based XML system for our embedded SDKs, and then I participated in the launch of a Git-based toolchain for developer docs. I became very familiar with the OpenAPI spec, and led the creation of content for the Cisco DevNet team. Along the way, I earned the Chairman's Choice award for my work on the onePK project! </p>
-    <img src="files/chairmans choice.jpg" alt="Chairmans Choice">
-    <h2>Developer Success</h2>
-    <p>After content, I moved into the world of support, leading the DevNet Developer Success team. My team answered tickets for our partners, customers, and other random developers in the world. I assumed ownership of the Cisco developer community, and we also answered community posts. Not only did we support code and APIs, but we also took on support for Code Exchange, where code samples were submitted and reviewed for posting, our certification courses for the DevNet certifications, and for general DevNet portal issues. I implemented a ZenDesk customer relationship management system, working with InfoSec, branding, the Cisco TAC organization, and others to set up tickeing and knowledge base authoring. During this time, I was part of the team that earned the Pioneer Award for our work on the DevNet sandboxes.  </p>
-    <img src="files/pioneer award.jpg" alt="Pioneer Award">  
-    <h2>Developer Community</h2>
-    <p>With a change in leadership, we closed down the support function and my role became focused on community. Not only did we ramp up activity on the forums, but we also expanded our presence at live and virtual events, as well as across third-party community platforms.  You can see more details on my <a href="community.html">Community page.</a></p>
-    <img src="files/devdash.jpg" alt="DevDash">
-    <h2>Developer Advocacy</h2>
-    <p>My most recent role at Cisco was as senior manager of Developer Advocacy. After many years of being a tactical leader, this role was a bit more strategic. While leveraging all of my experience in content creation, supporting partners and customers, and building community, I also pushed ahead in the outreach to our developer ecosystem. </p>
-    <img src="files/PZ workshop1.jpg" alt="Leading a workshop" class="large-image">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="content.html">Content</a>
+        <a href="community.html">Community</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="developer-relations.html">Developer Relations</a>
+        <a href="music.html">Music</a>
+    </div>
+
+    <div class="container">
+        <h1>Developer Relations</h1>
+        <p>
+            Developer relations (DevRel) is the bridge between technology providers and the developers who use their tools and platforms.
+            It combines elements of technical content creation, advocacy, support, and community building to empower developers and
+            create thriving ecosystems.
+        </p>
+
+        <h2>Developer Content</h2>
+        <p>
+            I began my journey in DevRel with developer content. Transitioning from product documentation to developer-focused docs,
+            I managed teams that created accessible and impactful resources. I led the implementation of advanced publishing systems,
+            including a DITA-based XML system and a Git-based toolchain. My work earned the <strong>Chairman's Choice Award</strong>
+            for contributions to the onePK project.
+        </p>
+        <img src="files/chairmans choice.jpg" alt="Chairman's Choice Award">
+
+        <h2>Developer Success</h2>
+        <p>
+            Leading the DevNet Developer Success team was an exciting challenge. My team supported partners, customers, and developers
+            by answering support tickets and community posts. I implemented a ZenDesk CRM system to streamline ticket management
+            and knowledge base authoring. During this time, I was part of the team that earned the <strong>Pioneer Award</strong> for
+            our innovative DevNet Sandbox program.
+        </p>
+        <img src="files/pioneer award.jpg" alt="Pioneer Award">
+
+        <h2>Developer Community</h2>
+        <p>
+            My focus shifted to community engagement, where I ramped up activity on forums, expanded our presence at events, and
+            fostered connections across third-party platforms. By creating engaging programs and content, I helped cultivate a vibrant
+            developer community. See more details on my <a href="community.html">Community page.</a>
+        </p>
+        <img src="files/devdash.jpg" alt="DevDash">
+
+        <h2>Developer Advocacy</h2>
+        <p>
+            As Senior Manager of Developer Advocacy, I took on a strategic role, leveraging my experience in content, support, and
+            community building. I led outreach efforts, organized events, and delivered workshops to strengthen connections with
+            developers and drive innovation in the ecosystem.
+        </p>
+        <img src="files/PZ workshop1.jpg" alt="Leading a Workshop">
+
+        <h2>The Importance of Developer Relations</h2>
+        <p>
+            DevRel is critical for fostering trust and collaboration between companies and developers. By providing great content,
+            responsive support, and meaningful community engagement, DevRel enables developers to adopt and innovate with technology.
+            It’s about building relationships, sharing knowledge, and creating an environment where developers can thrive.
+        </p>
+    </div>
 </body>
 </html>
