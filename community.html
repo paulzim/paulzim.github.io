@@ -89,6 +89,7 @@
             font-weight: bold;
             opacity: 0;
             transition: opacity 0.3s;
+            cursor: pointer;
         }
         .blog-container:hover .blog-overlay {
             opacity: 1;
@@ -104,6 +105,11 @@
             vertical-align: middle;
         }
     </style>
+    <script>
+        function openBlogInNewWindow() {
+            window.open('https://blogs.cisco.com/developer/devcommunity01', '_blank', 'width=800,height=600');
+        }
+    </script>
 </head>
 <body>
     <div class="navbar">
@@ -131,9 +137,9 @@
         </p>
 
         <div class="video-grid">
-            <div class="blog-container">
+            <div class="blog-container" onclick="openBlogInNewWindow()">
                 <iframe src="https://blogs.cisco.com/developer/devcommunity01" title="Blog"></iframe>
-                <div class="blog-overlay">Read Blog</div>
+                <div class="blog-overlay">Open Blog</div>
             </div>
             <iframe src="https://www.youtube.com/embed/sUvYaWuv_UM" title="Video 1"></iframe>
             <iframe src="https://www.youtube.com/embed/3pX2nNPaRzA" title="Video 2"></iframe>
