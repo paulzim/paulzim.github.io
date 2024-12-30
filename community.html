@@ -1,88 +1,142 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-   <meta charset="UTF-8"> 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <title>Paul Zimmerman - Community</title> 
-   <style> 
-    body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-            background-color: #DCDCDC
-        } 
-    h1 { 
-           color: #333; 
-        } 
-    p { 
-            line-height: 1.6; 
-        } 
-    a { 
-            color: #0066cc; 
-        } 
-        .social-icons img {
-            width: 20px; 
-            height: 20px; 
-            margin-right: 10px; 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Zimmerman - Community</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #DCDCDC;
         }
-    .navbar {
-        background-color: #333;
-        overflow: hidden;
-    }
-    .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    .container {
-        display: flex;
-        align-items: center;
-    }
-    .content {
-        flex: 1;
-        padding-right: 20px;
-    }
-    img { 
-        max-width: 400px; /* Ensures the image scales within the cell */ 
-        height: auto;
-    }
-</style>
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+            text-align: left;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            aspect-ratio: 16 / 9;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="content.html">Content</a>
-    <a href="community.html">Community</a>
-    <a href="leadership.html">Leadership</a>
-    <a href="developer-relations.html">Developer Relations</a>
-    <a href="music.html">Music</a>
-</div>
-    <h1>Community Building</h1> 
-    <p>Community building is one of my favorite professional things to do.</p> 
-    <p>My first foray into community building was with the <a href="https://web.archive.org/web/20120519230618/http:/docwiki.cisco.com/wiki/Main_Page">Cisco DocWiki</a> project, where I was the program manager. We built a publicly-facing collaborative content platform from the ground up, using MediaWiki as our base and constructing from there. I learned all about moderation, quality control, legal compliance, and all of the other things that come along with connecting with the outside world.</p> 
-    <p>Later, when I was managing Developer Success for the <a href="https://community.cisco.com/t5/devnet-hub/ct-p/4409j-developer-home">Cisco DevNet team</a>, I became owner of the <a href="https://community.cisco.com/t5/devnet-hub/ct-p/4409j-developer-home">Cisco developer forums</a>. At the time, the forums were mainly used as a support channel. I then switched gears and became the manager for Developer Community Engagement, and my focus on community grew even greater. I built greater engagement in our forums and across our greater online community. </p>
-    <iframe src="https://blogs.cisco.com/developer/devcommunity01" width="600" height="400" frameborder="0"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/sUvYaWuv_UM?si=IkZH8SNfct16xEfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3pX2nNPaRzA?si=kxV0C1ExdxaURw4_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gIl7crz0ziU?si=Okl5PGx_7yxf5wel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xYsHReVyWX4?si=VlAG0MwqwsPA7KcL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pW3EwKAajj0?si=6A_7PVfQVhIVONG1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p>I also looked to build the greater community, encouraging participation in social media and third-party forums as well as live events like meetups. Most recently, I was helping host the <a href="https://www.meetup.com/baylisa/">BayLISA community meetups</a> in San Jose.</p>
-    <img src="files\Paul speaking at meetup 2023 v2.jpeg" alt="Paul at Meetup">
-    <img src="files\community_mel.jpg" alt="Community Melbourne">
-    <p>Besides all of the great connections I made, I also had some fun!</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/A22fk05Syfc?si=JMGuRdIiwTbHiqsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p>I love working with the community! Please feel free to connect with me!</p> 
-    <div class="social-icons"> 
-        <p><a href="https://x.com/prodoom"><img src="files\X_icon.png" alt="X Icon">X</a> </p>
-        <p><a href="https://bsky.app/profile/ezpzee.bsky.social"><img src="files\bluesky.png" alt="BlueSky Icon">BlueSky</a> </p>
-        <p><a href="https://www.linkedin.com/in/paulzim/"><img src="files\linkedin.png" alt="LinkedIn Icon">LinkedIn</a> </p>
-    </div> 
-</body> 
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="content.html">Content</a>
+        <a href="community.html">Community</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="developer-relations.html">Developer Relations</a>
+        <a href="music.html">Music</a>
+    </div>
+
+    <div class="container">
+        <h1>Community Building</h1>
+        <p>
+            Community building is one of my favorite professional things to do. My first foray into community building was with the
+            <a href="https://web.archive.org/web/20120519230618/http:/docwiki.cisco.com/wiki/Main_Page">Cisco DocWiki</a> project, where I was the program manager.
+            We built a publicly-facing collaborative content platform from the ground up, using MediaWiki as our base and constructing from there.
+            I learned all about moderation, quality control, legal compliance, and all the other things that come along with connecting with the outside world.
+        </p>
+        <p>
+            Later, when I was managing Developer Success for the <a href="https://community.cisco.com/t5/devnet-hub/ct-p/4409j-developer-home">Cisco DevNet team</a>,
+            I became owner of the <a href="https://community.cisco.com/t5/devnet-hub/ct-p/4409j-developer-home">Cisco developer forums</a>. At the time, the forums were mainly used as a support channel.
+            I then switched gears and became the manager for Developer Community Engagement, and my focus on community grew even greater.
+            I built greater engagement in our forums and across our broader online community.
+        </p>
+
+        <div class="video-grid">
+            <iframe src="https://blogs.cisco.com/developer/devcommunity01" title="Blog"></iframe>
+            <iframe src="https://www.youtube.com/embed/sUvYaWuv_UM" title="Video 1"></iframe>
+            <iframe src="https://www.youtube.com/embed/3pX2nNPaRzA" title="Video 2"></iframe>
+            <iframe src="https://www.youtube.com/embed/gIl7crz0ziU" title="Video 3"></iframe>
+            <iframe src="https://www.youtube.com/embed/xYsHReVyWX4" title="Video 4"></iframe>
+            <iframe src="https://www.youtube.com/embed/pW3EwKAajj0" title="Video 5"></iframe>
+        </div>
+
+        <p>
+            I also looked to build the greater community, encouraging participation in social media and third-party forums as well as live events like meetups.
+            Most recently, I was helping host the <a href="https://www.meetup.com/baylisa/">BayLISA community meetups</a> in San Jose.
+        </p>
+
+        <div class="image-grid">
+            <img src="files/Paul speaking at meetup 2023 v2.jpeg" alt="Paul at Meetup">
+            <img src="files/community_mel.jpg" alt="Community Melbourne">
+        </div>
+
+        <p>Besides all of the great connections I made, I also had some fun!</p>
+        <iframe src="https://www.youtube.com/embed/A22fk05Syfc" title="Fun Video"></iframe>
+
+        <p>I love working with the community! Please feel free to connect with me!</p>
+
+        <div class="social-icons">
+            <a href="https://x.com/prodoom"><img src="files/X_icon.png" alt="X Icon">X</a>
+            <a href="https://bsky.app/profile/ezpzee.bsky.social"><img src="files/bluesky.png" alt="BlueSky Icon">BlueSky</a>
+            <a href="https://www.linkedin.com/in/paulzim/"><img src="files/linkedin.png" alt="LinkedIn Icon">LinkedIn</a>
+        </div>
+    </div>
+</body>
 </html>
