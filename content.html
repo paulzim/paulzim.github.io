@@ -1,57 +1,62 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-   <meta charset="UTF-8"> 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <title>Paul Zimmerman - Content</title> 
-   <style> 
-    body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-            background-color: #DCDCDC
-        } 
-    h1 { 
-           color: #333; 
-        } 
-    p { 
-            line-height: 1.6; 
-        } 
-       a { 
-            color: #0066cc; 
-        } 
-    .navbar {
-        background-color: #333;
-        overflow: hidden;
-    }
-    .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    .container {
-        display: flex;
-        align-items: center;
-    }
-    .content {
-        flex: 1;
-        padding-right: 20px;
-    }
-    .pdf {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-    }
-    img { 
-        max-width: 400px; /* Ensures the image scales within the cell */ 
-        height: auto;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Zimmerman - Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #DCDCDC;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            color: #0066cc;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .content {
+            max-width: 800px;
+            text-align: left;
+        }
+        .pdf {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 400px;
+            height: auto;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
 <div class="navbar">
@@ -62,29 +67,57 @@
     <a href="developer-relations.html">Developer Relations</a>
     <a href="music.html">Music</a>
 </div>
-    <h1>Content Creation and Management</h1> 
-    <h2>Technical Writing</h2> 
-    <p>Content has been the foundation of my career. My first role was a technical writer for <a href="https://comtechservices.com/">Comtech Services</a>, a technical documentation consulting firm. From there, I joined a startup, Touch Communications, where I continued to build my technical writing skills and learned the ups and downs of startup culture.</p> 
-    <p>I moved on to Octel Communications, continuing as a writer and then tech docs manager, where I managed a large team of writers, editors, and production specialists. Here, I got experience in online and embedded content.</p> 
-    <p>With my move to Cisco, I went back to writing for a few years. Then, I became a program manager. </p> 
-    <h2>Program Management</h2>
-    <p>As program manager, I tracked departmental metrics using the Balanced Scorecard approach. </p>
-    <iframe class="pdf" 
-        src="files\BP Newsletter - April 2008 Cut.pdf"
-        width="200" height="400">
-    </iframe>
-    <p>My largest accomplishment as a PM was the <a href="https://web.archive.org/web/20120519230618/http:/docwiki.cisco.com/wiki/Main_Page">Cisco DocWiki</a>, which was a publicly-facing wiki for Cisco technical content. I worked with the team to stand up the system as well as work out issues like moderation, content quality, and compliance. I helped author some articles on what we did and also gave presentations at conferences.</p>
-    <img src="files\p at Cisco Live 09.jpg" alt="Paul Zimmerman talking wikis at Cisco Live 2009">
-    <iframe class="pdf" 
-        src="files\BP Newsletter - February 2008 - Cut.pdf"
-        width="200" height="400">
-    </iframe>
-    <iframe class="pdf" 
-    src="files\BP Newsletter - February 2010 - Cut.pdf"
-    width="200" height="400">
-    </iframe>
-    <h2>People Management</h2>
-    <p>I became a documentation manager again, and continued with focus on content. Moving into the realm of developer content, I helped out the <a href="https://docs.opendaylight.org/en/latest/index.html">OpenDaylight open source project</a> with the initial version of their wiki-based documentation. I continued to work with embedded content, this time with SDKs.</p> 
-    <p>When I joined the DevNet team (Cisco developer relations) as Developer Content manager, I really got busy with developer content. I became intimately familiar with the Open API spec and with Git-based publishing toolchains. As I moved around the organization in other content-adjacent roles, I built a support knowledge base, learned about and published different forms of <a href="https://www.youtube.com/watch?v=sUvYaWuv_UM">video content</a>, and put out online content like <a href="https://blogs.cisco.com/author/paulzimmerman">blogs</a>.</p> 
-    <p>As a manager, I led the implementation of content management systems, including a Trisoft DITA-based XML CMS and also helped with a Git-based toolchain that we used for publishing developer docs to the DevNet site.</p>
+<div class="container">
+    <div class="content">
+        <h1>Content Creation and Management</h1>
+        <h2>Content Creation</h2>
+        <p>
+            Content has been the foundation of my career. My first role was a technical writer for <a href="https://comtechservices.com/">Comtech Services</a>,
+            a technical documentation consulting firm. From there, I joined a startup, Touch Communications, where I continued to build
+            my technical writing skills and learned the ups and downs of startup culture.
+        </p>
+        <p>
+            I moved on to Octel Communications, continuing as a writer and then tech docs manager, where I managed a large team of writers,
+            editors, and production specialists. Here, I gained experience in online and embedded content.
+        </p>
+        <p>
+            With my move to Cisco, I returned to writing for a few years before transitioning into program management.
+        </p>
+
+        <h2>Program Management</h2>
+        <p>
+            As a program manager, I tracked departmental metrics using the Balanced Scorecard approach to align goals and measure impact.
+        </p>
+        <iframe class="pdf" src="files\BP Newsletter - April 2008 Cut.pdf" title="Balanced Scorecard Example"></iframe>
+        <p>
+            My largest accomplishment as a PM was the <a href="https://web.archive.org/web/20120519230618/http:/docwiki.cisco.com/wiki/Main_Page">Cisco DocWiki</a>,
+            a publicly-facing wiki for Cisco technical content. I collaborated with the team to establish the system and addressed issues
+            like moderation, content quality, and compliance. I authored articles on this initiative and presented at conferences.
+        </p>
+        <p>Talking about collaborative content at Cisco Live 2009</p>
+        <img src="files\p at Cisco Live 09.jpg" alt="Paul Zimmerman talking wikis at Cisco Live 2009">
+        <p>CIDM Newsletter: Six Guiding Principles for Wikis </p>
+        <iframe class="pdf" src="files\BP Newsletter - February 2008 - Cut.pdf" title="Newsletter Example"></iframe>
+        <p>CIDM Newsletter: Connecting Content with your Community</p>
+        <iframe class="pdf" src="files\BP Newsletter - February 2010 - Cut.pdf" title="Newsletter Example"></iframe>
+
+        <h2>People Management</h2>
+        <p>
+            I became a documentation manager again and continued my focus on content. In the realm of developer content, I assisted the
+            <a href="https://docs.opendaylight.org/en/latest/index.html">OpenDaylight open source project</a> with the initial version of
+            their wiki-based documentation. I also worked extensively with embedded content for SDKs.
+        </p>
+        <p>
+            As the Developer Content Manager for Cisco’s DevNet team, I delved deeply into developer content, mastering the Open API
+            spec and Git-based publishing toolchains. In other roles, I built a support knowledge base, developed various forms of
+            <a href="https://www.youtube.com/watch?v=sUvYaWuv_UM">video content</a>, and published online content like
+            <a href="https://blogs.cisco.com/author/paulzimmerman">blogs</a>.
+        </p>
+        <p>
+            As a manager, I led the implementation of content management systems, including a Trisoft DITA-based XML CMS and a
+            Git-based toolchain for publishing developer docs to the DevNet site.
+        </p>
+    </div>
+</div>
 </body>
+</html>
