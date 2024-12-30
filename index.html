@@ -7,9 +7,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #DCDCDC
+            background-color: #DCDCDC;
         }
         .navbar {
             background-color: #333;
@@ -29,15 +30,17 @@
         }
         .container {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
         }
         .content {
             flex: 1;
             padding-right: 20px;
+            max-width: 800px;
         }
         .resized-image { 
             width: 450px; 
-            height: auto; /* This keeps the aspect ratio intact */ 
+            height: auto; /* Keeps the aspect ratio intact */ 
         }
         table { 
             width: 75%; 
@@ -59,6 +62,12 @@
         .resume-button {
             margin-left: 25%;
         }
+        .section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            color: #0078D7;
+        }
     </style>
 </head>
 <body>
@@ -74,8 +83,75 @@
             <h1>Paul Zimmerman</h1>
             <h2>Content | Community | Creativity</h2>
             <br>
-            <p>I'm a leader who has a focus on content strategy and community engagement, especially in the world of developer relations. I've led global teams, championed developer advocacy, and juggled cross-functional projects. I’m all about building scalable systems for content and community. I'm into crafting and rolling out strategies to create lively, engaged communities, and I love helping developers find the tools and resources they need to thrive.</p>
-            <br>
+            <p>
+                Hi, I’m Paul Zimmerman—a seasoned leader in developer relations and technology with over 26 years of experience
+                at Cisco Systems and beyond. I’ve worn many hats throughout my career, from technical writer to program manager
+                to senior leader, each step building my expertise in content strategy, community engagement, developer advocacy,
+                and program management.
+            </p>
+            <p>
+                I’m passionate about empowering developers and creating thriving communities around cutting-edge technologies.
+                Whether it’s leading international teams, delivering impactful workshops, or implementing scalable systems, I focus
+                on innovation, empathy, and collaboration to achieve results.
+            </p>
+            <div class="section">
+                <h2>My Journey</h2>
+
+                <h3>Content is the Foundation</h3>
+                <p>
+                    My career began as a technical writer, developing clear and engaging documentation for emerging technologies.
+                    At companies like Octel Communications and Lucent Technologies, I honed my ability to translate complex ideas into
+                    accessible content and began managing teams to scale this work.
+                </p>
+
+                <h3>Pioneering New Platforms at Cisco</h3>
+                <p>
+                    At Cisco, I took on program management roles where I launched groundbreaking projects like Cisco’s first collaborative
+                    documentation platform, the DocWiki. These efforts taught me the power of collaboration and community-building,
+                    laying the foundation for my later work in developer relations.
+                </p>
+
+                <h3>Elevating Developer Success</h3>
+                <p>
+                    In 2015, I became Senior Manager of Developer Success, leading global teams to provide support for developers using
+                    Cisco’s platforms. I implemented new CRM systems, supported the launch of technical certifications, and earned the
+                    Pioneer Award for the DevNet Sandbox project.
+                </p>
+
+                <h3>Building Vibrant Communities</h3>
+                <p>
+                    As Senior Manager of Developer Community Engagement, I focused on creating spaces where developers could thrive.
+                    From revamping forums and launching new technical hubs to piloting in-person meetups, I fostered connections that
+                    continue to drive innovation.
+                </p>
+
+                <h3>Leading with Vision in Developer Advocacy</h3>
+                <p>
+                    Most recently, I led a team of developer advocates to bridge Cisco’s technologies with the broader developer ecosystem.
+                    Highlights include organizing Developer Sustainability Week, presenting at industry conferences, and building
+                    partnerships with local communities.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Why I Do What I Do</h2>
+                <p>
+                    Throughout my career, I’ve been driven by a desire to make technology accessible and engaging for everyone. I believe
+                    that great content, thoughtful support, and vibrant communities are the keys to helping developers succeed.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Achievements at a Glance</h2>
+                <ul>
+                    <li>Winner of the Cisco Pioneer Award for Innovation (2017)</li>
+                    <li>Recipient of the Cisco Chairman’s Choice Award (2013)</li>
+                    <li>Launched successful post-pandemic meetup initiatives and virtual events</li>
+                    <li>Implemented scalable CRM and content management systems</li>
+                    <li>Presented at major conferences like Cisco Live and CIDM Best Practices</li>
+                    <li>Supported the launch of Cisco’s automation certifications</li>
+                </ul>
+            </div>
             <p class="resume-button"><a href="files/Zimmerman_Paul_Tech.pdf" target="_blank"><img src="files/Resume button.png" alt="resume" width="300px"></a></p> 
         </div>
         <div class="picture">
