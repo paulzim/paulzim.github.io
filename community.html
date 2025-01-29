@@ -76,10 +76,21 @@
         }
         .image-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin: 20px 0;
+            justify-items: center;
         }
+        
+        .image-grid img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            object-fit: cover;
+        }
+        
         .responsive-img {
             width: 100%;
             max-width: 300px;
@@ -255,9 +266,10 @@
 </p>
 
 <div class="image-grid">
-            <img src="files/Paul speaking at meetup 2023 v2.jpeg" alt="Paul at Meetup" class="responsive-img">
-            <img src="files/community_mel.jpg" alt="Community Melbourne" class="responsive-img">
+    <div><img src="files/Paul speaking at meetup 2023 v2.jpeg" alt="Paul at Meetup" class="responsive-img"></div>
+    <div><img src="files/community_mel.jpg" alt="Community Melbourne" class="responsive-img"></div>
 </div>
+
 <p>Beside all of the great connections I made, I also had some fun!</p>
 <iframe src="https://www.youtube.com/embed/A22fk05Syfc" title="Fun Video"></iframe>
 
