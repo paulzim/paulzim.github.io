@@ -65,10 +65,21 @@
         }
         .image-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin: 20px 0;
+            justify-items: center;
         }
+        
+        .image-grid img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            display: block;
+        }
+        
         .responsive-img {
             width: 100%;
             max-width: 300px;
@@ -198,10 +209,11 @@
         my team to understand their challenges and celebrate their successes.
     </p>
     <div class="image-grid">
-        <img src="files/Chatting with Chuck.png" alt="Chatting with Chuck">
-        <img src="files/pioneer award 2017.jpg" alt="Pioneer Award 2017">
-        <img src="files/Habitat for Humanity 2017.jpg" alt="Habitat for Humanity 2017">
+        <div><img src="files/Chatting with Chuck.png" alt="Chatting with Chuck"></div>
+        <div><img src="files/pioneer award 2017.jpg" alt="Pioneer Award 2017"></div>
+        <div><img src="files/Habitat for Humanity 2017.jpg" alt="Habitat for Humanity 2017"></div>
     </div>
+    
 
     <h2>People Management</h2>
     <p>
