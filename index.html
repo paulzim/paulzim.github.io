@@ -121,9 +121,44 @@
                     width: 100%;
                 }
             }
+            #topButton {
+                display: none; /* Hidden by default */
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+                background-color: #333;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: opacity 0.3s;
+            }
+            
+            #topButton:hover {
+                background-color: #555;
+            }
         </style>
         
     </head>    
+<script>
+        // Show the button when scrolling down
+        window.onscroll = function() {
+            let button = document.getElementById("topButton");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    
+        // Scroll smoothly to the top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+</script>
 <body>
     <div class="navbar">
         <a href="index.html">Home</a>
@@ -204,5 +239,6 @@
             </div>
         </div>
     </div>
+    <button onclick="scrollToTop()" id="topButton" title="Go to top">↑ Top</button>
 </body>
 </html>
