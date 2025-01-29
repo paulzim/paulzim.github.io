@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background: linear-gradient(to bottom, #f0f0f0, #dcdcdc;
+            background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
         }
         .navbar {
             background-color: #333;
@@ -69,10 +69,13 @@
             aspect-ratio: 4 / 3;
             margin: 20px 0;
         }
-        img {
+        .responsive-img {
+            width: 100%;
             max-width: 400px;
             height: auto;
-            margin: 20px 0;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
         }
         ul {
             padding-left: 20px;
@@ -82,78 +85,62 @@
             text-align: center;
             margin: 10px 0;
         }
-            /* Responsive Styles */
-    @media (max-width: 768px) {
-        body {
-            padding: 10px;
-        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
 
-        .navbar {
-            flex-direction: column;
-        }
+            .navbar {
+                flex-direction: column;
+            }
 
-        .navbar a {
-            padding: 10px;
-        }
+            .navbar a {
+                padding: 10px;
+            }
 
-        .container {
-            flex-direction: column;
-        }
+            .container {
+                flex-direction: column;
+            }
 
-        .content {
-            padding-right: 0;
-        }
+            h1 {
+                font-size: 2.5rem;
+            }
 
-        h1 {
-            font-size: 2.5rem;
+            h2 {
+                font-size: 1.5rem;
+            }
         }
-
-        h2 {
-            font-size: 1.5rem;
+        #topButton {
+            opacity: 0;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: opacity 0.3s, transform 0.3s;
         }
-
-        .picture-container {
-            float: none;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 300px;
+        
+        #topButton.show {
+            opacity: 1;
+            transform: scale(1.1);
         }
-
-        .picture-container img {
-            width: 100%;
+        
+        #topButton:hover {
+            background-color: #555;
         }
-    }
-    #topButton {
-        opacity: 0;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: opacity 0.3s, transform 0.3s;
-    }
-    
-    #topButton.show {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    
-    #topButton:hover {
-        background-color: #555;
-    }
-    
-    .section {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    
+        
+        .section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
     </style>
 </head>
 <script>
@@ -182,7 +169,7 @@
         }
 
         window.addEventListener("scroll", revealSections);
-        revealSections(); // Run on page load
+        revealSections();
     });
 </script>
 
@@ -195,89 +182,45 @@
     <a href="developer-relations.html">Developer Relations</a>
     <a href="music.html">Music</a>
 </div>
+
 <div class="container">
     <h1>Content Creation and Management</h1>
     <h2>Content as the Foundation of My Career</h2>
-    <p>
-        Content has been at the core of my career, shaping my expertise in content creation, management, and team leadership. 
-        I began as a technical writer, where I learned how to translate complex concepts into clear, accessible documentation. 
-        Working at Comtech Services, I developed foundational writing skills, which I expanded at 
-        Touch Communications, gaining firsthand experience in the fast-paced startup world. At Octel Communications, 
-        I took on content leadership, managing a team of writers, editors, and production specialists, and developing expertise in 
-        online and embedded content.
+    <p class="section">
+        Content has been at the core of my career, shaping my expertise in content creation, management, and leadership.
     </p>
-    <p>
-        At Cisco, I transitioned from individual contributor to program and people manager, leading initiatives that improved 
-        content quality, accessibility, and distribution . Even as I moved into 
-         <a href="developer-relations.html">Developer Relations (DevRel)</a>, I remained deeply involved in 
-         creating and curating content , whether through <a href="https://blogs.cisco.com/author/paulzimmerman">blogs</a>, 
-         technical documentation, <a href="https://www.youtube.com/watch?v=sUvYaWuv_UM">video content</a>, 
-         or <a href="https://community.cisco.com/t5/user/viewprofilepage/user-id/317191">community engagement content</a>. 
-         My career has been built on the principle that great content empowers users and drives engagement, 
-         and I bring that philosophy to every project I lead.
-    </p>
-        
 
     <h2>Content Program Management: Strategy, Tools, and Execution</h2>
-    <p>
-        While I started with content creation, I have extensive experience in content program management, 
-        where I took the next step to align content strategies with business objectives and user needs. 
+    <p class="section">
+        While I started with content creation, I have extensive experience in content program management.
     </p>
-        
-    <h3>Metrics</h3>
-        As a program manager, I implemented the <strong>Balanced Scorecard approach</strong>  to track key metrics and measure the impact of content initiatives.
+
+    <h3 class="section">Metrics</h3>
+    <p class="section">
+        I implemented the <strong>Balanced Scorecard approach</strong> to track key metrics and measure content impact.
     </p>
-    <iframe class="pdf" src="files/BP Newsletter - April 2008 Cut.pdf" title="Balanced Scorecard Example"></iframe>
+    <iframe class="pdf section" src="files/BP Newsletter - April 2008 Cut.pdf" title="Balanced Scorecard Example"></iframe>
 
-<h3>Collaborative Content</h3>
-
-    <p>
-        One of my most impactful projects was leading the <a href="https://web.archive.org/web/20120519230618/http:/docwiki.cisco.com/wiki/Main_Page">Cisco DocWiki</a>, 
-        a publicly facing wiki designed to enable collaboration between Cisco, customers, and partners. 
-        his initiative required me to manage technical implementation, establish moderation processes, ensure content quality, 
-        and address compliance concerns. I documented and presented insights from this 
-        project at industry conferences, sharing best practices for crowdsourced content and community engagement.
+    <h3 class="section">Collaborative Content</h3>
+    <p class="section">
+        I led the <a href="https://web.archive.org/web/20120519230618/http:/docwiki.cisco.com/wiki/Main_Page" target="_blank">Cisco DocWiki</a>, 
+        a publicly facing wiki for collaborative content. I documented and presented insights at industry conferences.
     </p>
     <p class="caption">Talking about collaborative content at Cisco Live 2009</p>
-    <img src="files/p at Cisco Live 09.jpg" alt="Paul Zimmerman talking wikis at Cisco Live 2009">
-    <p class="caption">CIDM Newsletter: Six Guiding Principles for Wikis</p>
-    <iframe class="pdf" src="files/BP Newsletter - February 2008 - Cut.pdf" title="Newsletter Example"></iframe>
-    <p class="caption">CIDM Newsletter: Connecting Content with your Community</p>
-    <iframe class="pdf" src="files/BP Newsletter - February 2010 - Cut.pdf" title="Newsletter Example"></iframe>
-    <p>
-        My content management experience extends into open-source collaboration as well. 
-        With the <a href="https://docs.opendaylight.org/en/latest/index.html">OpenDaylight open source project</a>, 
-        I worked with several collaborators to build the project's wiki-based documentation, 
-        structuring content to support a highly technical audience while enabling community contributions. 
+    <img src="files/p at Cisco Live 09.jpg" alt="Paul Zimmerman talking wikis at Cisco Live 2009" class="responsive-img section">
+    
+    <h2 class="section">Leading Content Teams</h2>
+    <p class="section">
+        At Cisco, I led content teams and implemented CMS solutions, including:
     </p>
-
-
-    <h2>Leading Content Teams</h2>
-    <p>
-        As a documentation and content manager, I have led teams responsible for product and developer content. At Cisco, I led the implementation of content management systems (CMS), including:
-    </p>
-    <ul>
-        <li><strong>Trisoft DITA-based XML CMS</strong> – Standardized structured content creation and improved content reuse across teams.</li>
-        <li><strong>Git-based publishing toolchains</strong> – Enabled developers to directly contribute to technical documentation and streamlined the publishing workflow.</li>
+    <ul class="section">
+        <li><strong>Trisoft DITA-based XML CMS</strong> – Standardized content creation.</li>
+        <li><strong>Git-based publishing toolchains</strong> – Enabled developer contributions.</li>
     </ul>
-    <p>
-        In my role as Senior Manager of Developer Success, I applied my content expertise to building a robust 
-        knowledge base within our ZenDesk customer relationship management system (CRM), 
-        which helped make support content easily searchable, well-structured, and actionable.
+    <p class="section">
+        My content leadership experience includes mentoring writers and editors, building scalable documentation strategies, and fostering collaboration.
     </p>
-    <p>
-        Besides managing content systems, one of the best things about leadership has been mentoring and developing content professionals. 
-        I have guided writers, editors, and developer advocates, helping them refine their skills in technical communication and community engagement. 
-        My leadership philosophy is centered on empowering teams to create high-impact content while fostering a culture of continuous learning and collaboration.
-    </p>
-    <p>
-        Through all of my experience with hands-on content creation, strategic content management, and leading content teams, my goal has always been to deliver clear, accessible, and scalable content solutions. 
-        I believe that great content is more than just documentation. It is a strategic asset that enhances user experience, drives adoption, and builds community. 
-        My expertise in content strategy, content operations, and leadership allows me to bridge the gap between 
-        technology and users, which has been a guiding drive thorughout my career.
-    </p>
-
 </div>
-<button onclick="scrollToTop()" id="topButton" title="Go to top">↑ Top</button>
+<button onclick="scrollToTop()" id="topButton">↑ Top</button>
 </body>
 </html>
