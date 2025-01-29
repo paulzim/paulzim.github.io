@@ -151,19 +151,22 @@
 </head>
 
 <script>
-    // Scroll to Top Button
-    window.onscroll = function () {
+    window.addEventListener("scroll", function () {
         let button = document.getElementById("topButton");
-        if (document.documentElement.scrollTop > 300) {
+        if (window.scrollY > 300) {
             button.classList.add("show");
         } else {
             button.classList.remove("show");
         }
-    };
-
+    });
+    
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
+    
+    // Ensure mobile devices detect touch events properly
+    document.getElementById("topButton").addEventListener("touchstart", scrollToTop);
+    
 </script>
 
 <script>

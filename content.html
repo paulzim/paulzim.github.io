@@ -144,16 +144,22 @@
     </style>
 </head>
 <script>
-    window.onscroll = function () {
+    window.addEventListener("scroll", function () {
         let button = document.getElementById("topButton");
-        if (document.documentElement.scrollTop > 300) {
+        if (window.scrollY > 300) {
             button.classList.add("show");
         } else {
             button.classList.remove("show");
         }
-    };
-</script>
-
+    });
+    
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    
+    // Ensure mobile devices detect touch events properly
+    document.getElementById("topButton").addEventListener("touchstart", scrollToTop);
+    
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         let sections = document.querySelectorAll(".section");
