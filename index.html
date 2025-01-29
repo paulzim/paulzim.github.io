@@ -143,7 +143,23 @@
         </style>
         
     </head>    
-
+    <script>
+        // Show the button when scrolling down
+        window.onscroll = function() {
+            let button = document.getElementById("topButton");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    
+        // Scroll smoothly to the top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    
 <body>
     <div class="navbar">
         <a href="index.html">Home</a>
