@@ -192,5 +192,20 @@
     <h2>Why This Matters</h2>
     <p>AI is changing how developers work, how networks function, and how communities engage. My focus has always been on enabling people in technology to succeed, and AI is now a core part of that mission. Whether it’s creating smarter support systems, simplifying complex workflows, or scaling community efforts, I’m excited about the possibilities AI brings to developer ecosystems.</p>
   </div>
+    <button onclick="scrollToTop()" id="topButton" title="Go to top">↑ Top</button>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      let button = document.getElementById("topButton");
+      button.classList.toggle("show", window.scrollY > 300);
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.getElementById("topButton").addEventListener("touchstart", scrollToTop);
+  </script>
+
 </body>
 </html>
