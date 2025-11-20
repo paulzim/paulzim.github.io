@@ -152,6 +152,24 @@
         }
   </style>
 </head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let sections = document.querySelectorAll(".section");
+    
+            function revealSections() {
+                sections.forEach(section => {
+                    let rect = section.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 50) {
+                        section.style.opacity = "1";
+                        section.style.transform = "translateY(0)";
+                    }
+                });
+            }
+    
+            window.addEventListener("scroll", revealSections);
+            revealSections(); // Run on page load
+        });
+    </script>
 <body>
   <div class="navbar">
     <a href="index.html">Home</a>
