@@ -180,6 +180,38 @@
             .card:hover {
                 transform: translateY(-5px);
             }
+
+            .sample-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 18px;
+            }
+
+            .sample-card {
+                display: flex;
+                flex-direction: column;
+                min-height: 170px;
+            }
+
+            .sample-card h3 {
+                margin-top: 0;
+                margin-bottom: 8px;
+                color: #072035;
+            }
+
+            .sample-card p {
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
+
+            .sample-card a {
+                margin-top: auto;
+                font-weight: bold;
+            }
+
+            .sample-card a:hover {
+                color: #ff6600;
+            }
                         
         </style>
         
@@ -239,7 +271,7 @@
         <a href="community.html">Community</a>
         <a href="leadership.html">Leadership</a>
         <a href="developer-relations.html">Developer Relations</a>
-        <a href="ai.html">AI Work</a>
+        <a href="ai.html">AI Enablement</a>
         <a href="music.html">Music</a>
     </div>
     <div class="container">
@@ -298,29 +330,39 @@
             </div>
             <div class="section">
                 <h2>Content Samples</h2>
-                <div class="card">
-                    <li><a href="https://blogs.cisco.com/author/paulzimmerman" target="_blank" rel="noopener noreferrer">Blogs</a></li>
-                </div>
-                <div class="card">
-                    <li><a href="https://community.cisco.com/t5/user/viewprofilepage/user-id/317191" target="_blank" rel="noopener noreferrer">Community content</a></li>
-                </div>
-                <div class="card">
-                    <li><a href="https://www.youtube.com/playlist?list=PLzY6Eou6lYnDoeyYEWMzPtyj0JWECIbDb" target="_blank" rel="noopener noreferrer">Video content</a></li>
-                </div>
-                <div class="card">
-                    <h3>Public GitHub</h3>
-                    <ul>
-                        <li><a href="https://github.com/paulzim/pedalboard_extractor" target="_blank" rel="noopener noreferrer">Pedalboard Extractor for LLMs</a></li>
-                        <li><a href="https://github.com/paulzim/music_scout" target="_blank" rel="noopener noreferrer">Music Scout AI Agent</a></li>
-                        <li><a href="https://github.com/paulzim/nttv_chatbot_ext" target="_blank" rel="noopener noreferrer">NTTV Chatbot</a></li>
-                    </ul>
+                <div class="sample-grid">
+                    <div class="card sample-card">
+                        <h3>Blogs</h3>
+                        <p>Technical articles and thought leadership.</p>
+                        <a href="https://blogs.cisco.com/author/paulzimmerman" target="_blank" rel="noopener noreferrer">View blog samples</a>
+                    </div>
+                    <div class="card sample-card">
+                        <h3>Community Content</h3>
+                        <p>Developer community engagement and guidance.</p>
+                        <a href="https://community.cisco.com/t5/user/viewprofilepage/user-id/317191" target="_blank" rel="noopener noreferrer">View community content</a>
+                    </div>
+                    <div class="card sample-card">
+                        <h3>Video Content</h3>
+                        <p>Educational video content for developers and technical audiences.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLzY6Eou6lYnDoeyYEWMzPtyj0JWECIbDb" target="_blank" rel="noopener noreferrer">View videos</a>
+                    </div>
+                    <div class="card sample-card">
+                        <h3>Tech Docs</h3>
+                        <p>Deep content for technical audiences.</p>
+                        <a href="https://paulzim.github.io/files/Cisco%20IOS%20Voice%20Troubleshooting%20and%20Monitoring%20Guide.pdf#page=35" target="_blank" rel="noopener noreferrer">View manual</a>
+                    </div>
+                    <div class="card sample-card">
+                        <h3>Public GitHub</h3>
+                        <p>AI agent, RAG, and structured extraction project samples.</p>
+                        <a href="https://github.com/paulzim" target="_blank" rel="noopener noreferrer">View repo</a>
+                    </div>
                 </div>
                 
             </div>
             <div class="section">
                 <h2>Achievements at a Glance</h2>
                 <ul>
-                    <li>Recipient of the <a href=https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2017/m09/pioneer-awards-recognize-the-best-in-engineering-innovation.html>Cisco Pioneer Award for Innovation (2017)</a></li>
+                    <li>Recipient of the <a href="https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2017/m09/pioneer-awards-recognize-the-best-in-engineering-innovation.html" target="_blank" rel="noopener noreferrer">Cisco Pioneer Award for Innovation (2017)</a></li>
                     <li>Recipient of the Cisco Chairman’s Choice Award (2013)</li>
                     <li>Recipient of the Octel President's Award</li>
                     <li>Presented at major conferences like Cisco Live (US, Europe, and Australia), CIDM CMS/DITA North America and CIDM Best Practices</li>
