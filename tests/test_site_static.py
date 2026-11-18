@@ -16,7 +16,7 @@ EXPECTED_NAV_LABELS = [
     "Music",
 ]
 EXPECTED_SAMPLE_CARD_TITLES = [
-    "Blogs",
+    "Articles, Blogs, & Features",
     "Community Content",
     "Video Content",
     "Tech Docs",
@@ -64,6 +64,7 @@ def test_discovers_top_level_html_files():
     names = {path.name for path in html_files()}
     assert names == {
         "index.html",
+        "articles.html",
         "content.html",
         "community.html",
         "leadership.html",

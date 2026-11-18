@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Articles, blogs, and features by and about Paul Zimmerman, covering AI platforms, developer advocacy, and technical communities.">
+    <title>Articles, Blogs, &amp; Features - Paul Zimmerman</title>
+    <link rel="icon" type="image/x-icon" href="pz_favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; color: #263744; background: linear-gradient(to bottom, #f0f0f0, #dcdcdc); }
+        .navbar { background-color: #333; display: flex; justify-content: center; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { display: block; color: #f2f2f2; text-align: center; padding: 14px 20px; text-decoration: none; }
+        .navbar a:hover { background-color: #ddd; color: black; }
+        a { color: #075b94; text-underline-offset: 3px; }
+        a:hover { color: #a44200; }
+        a:focus-visible { outline: 3px solid #087bb5; outline-offset: 5px; border-radius: 2px; }
+        .skip-link { position: absolute; left: 20px; top: -80px; padding: 10px 16px; background: white; z-index: 1001; }
+        .skip-link:focus { top: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .page-heading { padding: 30px 0 25px; }
+        .back-link { font-size: .9rem; }
+        h1 { font-family: 'Averia Libre', Arial, sans-serif; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.2; color: #072035; margin: 22px 0 12px; }
+        .intro { max-width: 700px; margin: 0; font-size: 1.05rem; }
+        .list-note { margin: 18px 0 0; font-size: .85rem; color: #52616b; }
+        .article-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+        .article-card { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 24px; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,.1); }
+        .thumbnail { display: block; align-self: start; border-radius: 6px; overflow: hidden; background: #edf2f5; }
+        .thumbnail img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; display: block; }
+        .article-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 9px; font-size: .8rem; color: #52616b; }
+        .article-kind { color: #31576f; background: #edf3f7; padding: 1px 7px; border-radius: 4px; margin-left: 2px; }
+        h2 { font-size: 1.25rem; line-height: 1.35; margin: 0 0 8px; }
+        h2 a { color: #072035; text-decoration: none; }
+        h2 a:hover { text-decoration: underline; }
+        .byline { font-size: .8rem; color: #52616b; margin: 0 0 10px; }
+        .summary { font-size: .95rem; margin: 0 0 12px; }
+        .read-link { font-size: .9rem; font-weight: bold; }
+        .page-footer { border-top: 1px solid #bfc7cc; margin-top: 32px; padding: 22px 0 34px; font-size: .9rem; }
+        .page-footer p { margin: 0 0 12px; }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .navbar { position: static; }
+            .navbar a { padding: 10px; font-size: .9rem; }
+            .article-card { grid-template-columns: 190px minmax(0, 1fr); padding: 18px; gap: 18px; }
+        }
+        @media (max-width: 580px) {
+            .article-card { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+            .page-heading { padding-top: 24px; }
+            h2 { font-size: 1.2rem; }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T57ZTPE67C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-T57ZTPE67C');
+    </script>
+</head>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to articles</a>
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="content.html">Content</a>
+        <a href="community.html">Community</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="developer-relations.html">Developer Relations</a>
+        <a href="ai.html">AI Enablement</a>
+        <a href="music.html">Music</a>
+    </nav>
+    <main class="container" id="main">
+        <header class="page-heading">
+            <a class="back-link" href="index.html">← Paul Zimmerman / Home</a>
+            <h1>Articles, Blogs, &amp; Features</h1>
+            <p class="intro">My writing on technology, developer advocacy, and community building, alongside features about my work.</p>
+            <p class="list-note">Newest first · Article links open the original publication in a new tab.</p>
+        </header>
+        <!-- Add new entries at the top, using the original publication date. -->
+        <ol class="article-list" aria-label="Articles, newest first">
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://www.cmxhub.com/blog/building-bridges-paul-zimmermans-journey-from-documentation-to-developer-advocacy" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/cmx-profile.jpg" alt="Building Bridges: Paul Zimmerman&#x27;s Journey from Documentation to Developer Advocacy — CMX" width="600" height="338" loading="eager" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">CMX <span aria-hidden="true">·</span> <time datetime="2026-11-05">November 5, 2026</time> <span class="article-kind">Profile</span></p>
+                        <h2><a href="https://www.cmxhub.com/blog/building-bridges-paul-zimmermans-journey-from-documentation-to-developer-advocacy" target="_blank" rel="noopener noreferrer">Building Bridges: Paul Zimmerman&#x27;s Journey from Documentation to Developer Advocacy</a></h2>
+                        <p class="byline">By Ahmad Fahim Didar · Featuring Paul Zimmerman</p>
+                        <p class="summary">A CMX profile exploring my journey from technical documentation to developer advocacy and open-source community building.</p>
+                        <a class="read-link" href="https://www.cmxhub.com/blog/building-bridges-paul-zimmermans-journey-from-documentation-to-developer-advocacy" target="_blank" rel="noopener noreferrer" aria-label="Read profile: Building Bridges: Paul Zimmerman&#x27;s Journey from Documentation to Developer Advocacy">Read profile <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://cloudnativenow.com/contributed-content/your-ml-platform-isnt-kubernetes-native-just-because-it-runs-on-kubernetes/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/kubernetes-ml.jpeg" alt="Your ML Platform Isn’t Kubernetes-Native Just Because It Runs on Kubernetes — Cloud Native Now" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cloud Native Now <span aria-hidden="true">·</span> <time datetime="2026-11-02">November 2, 2026</time> <span class="article-kind">Article</span></p>
+                        <h2><a href="https://cloudnativenow.com/contributed-content/your-ml-platform-isnt-kubernetes-native-just-because-it-runs-on-kubernetes/" target="_blank" rel="noopener noreferrer">Your ML Platform Isn’t Kubernetes-Native Just Because It Runs on Kubernetes</a></h2>
+                        <p class="byline">By Paul Zimmerman</p>
+                        <p class="summary">Why a Kubernetes-native ML platform needs explicit lifecycle state, continuous reconciliation, and recoverable operations.</p>
+                        <a class="read-link" href="https://cloudnativenow.com/contributed-content/your-ml-platform-isnt-kubernetes-native-just-because-it-runs-on-kubernetes/" target="_blank" rel="noopener noreferrer" aria-label="Read article: Your ML Platform Isn’t Kubernetes-Native Just Because It Runs on Kubernetes">Read article <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://blogs.cisco.com/cisco-devnet/developer-sustainability-week-events" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/developer-sustainability.jpg" alt="Coding for a Greener Tomorrow: Developer Sustainability Week Takes Center Stage — Cisco Blogs" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Blogs <span aria-hidden="true">·</span> <time datetime="2024-04-15">April 15, 2024</time> <span class="article-kind">Blog</span></p>
+                        <h2><a href="https://blogs.cisco.com/cisco-devnet/developer-sustainability-week-events" target="_blank" rel="noopener noreferrer">Coding for a Greener Tomorrow: Developer Sustainability Week Takes Center Stage</a></h2>
+                        <p class="byline">By Paul Zimmerman</p>
+                        <p class="summary">Developer Sustainability Week brings developers together to explore greener technology and practical ways to reduce environmental impact.</p>
+                        <a class="read-link" href="https://blogs.cisco.com/cisco-devnet/developer-sustainability-week-events" target="_blank" rel="noopener noreferrer" aria-label="Read blog: Coding for a Greener Tomorrow: Developer Sustainability Week Takes Center Stage">Read blog <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://blogs.cisco.com/cisco-devnet/devnetzoneapjc23" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/devnet-apjc.png" alt="Celebrating 10 Years of DevNet at Cisco Live APJC — Cisco Blogs" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Blogs <span aria-hidden="true">·</span> <time datetime="2023-12-18">December 18, 2023</time> <span class="article-kind">Blog</span></p>
+                        <h2><a href="https://blogs.cisco.com/cisco-devnet/devnetzoneapjc23" target="_blank" rel="noopener noreferrer">Celebrating 10 Years of DevNet at Cisco Live APJC</a></h2>
+                        <p class="byline">By Paul Zimmerman</p>
+                        <p class="summary">Highlights from the DevNet Zone in Melbourne: hands-on workshops, technical sessions, and a decade of developer community.</p>
+                        <a class="read-link" href="https://blogs.cisco.com/cisco-devnet/devnetzoneapjc23" target="_blank" rel="noopener noreferrer" aria-label="Read blog: Celebrating 10 Years of DevNet at Cisco Live APJC">Read blog <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://blogs.cisco.com/cisco-devnet/flavorsofdevops01" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/devops-flavors.jpeg" alt="The Many Flavors of DevOps — Cisco Blogs" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Blogs <span aria-hidden="true">·</span> <time datetime="2023-01-17">January 17, 2023</time> <span class="article-kind">Blog</span></p>
+                        <h2><a href="https://blogs.cisco.com/cisco-devnet/flavorsofdevops01" target="_blank" rel="noopener noreferrer">The Many Flavors of DevOps</a></h2>
+                        <p class="byline">By Paul Zimmerman</p>
+                        <p class="summary">A guide to the expanding DevOps landscape, from NetDevOps and DevSecOps to CloudOps, DataOps, and NoOps.</p>
+                        <a class="read-link" href="https://blogs.cisco.com/cisco-devnet/flavorsofdevops01" target="_blank" rel="noopener noreferrer" aria-label="Read blog: The Many Flavors of DevOps">Read blog <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://blogs.cisco.com/cisco-devnet/devcommunity01" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/developer-community.png" alt="Inclusion, Diversity, and Belonging in the Developer Community — Cisco Blogs" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Blogs <span aria-hidden="true">·</span> <time datetime="2022-06-15">June 15, 2022</time> <span class="article-kind">Blog</span></p>
+                        <h2><a href="https://blogs.cisco.com/cisco-devnet/devcommunity01" target="_blank" rel="noopener noreferrer">Inclusion, Diversity, and Belonging in the Developer Community</a></h2>
+                        <p class="byline">By Paul Zimmerman</p>
+                        <p class="summary">How an inclusive developer community creates space for different perspectives, shared learning, and collaboration.</p>
+                        <a class="read-link" href="https://blogs.cisco.com/cisco-devnet/devcommunity01" target="_blank" rel="noopener noreferrer" aria-label="Read blog: Inclusion, Diversity, and Belonging in the Developer Community">Read blog <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://blogs.cisco.com/cisco-devnet/devnetcreatestartnow01" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/devnet-create-2021.jpg" alt="Start Your DevNet Create 2021 with the “Start Now” Channel — Cisco Blogs" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Blogs <span aria-hidden="true">·</span> <time datetime="2021-09-23">September 23, 2021</time> <span class="article-kind">Blog</span></p>
+                        <h2><a href="https://blogs.cisco.com/cisco-devnet/devnetcreatestartnow01" target="_blank" rel="noopener noreferrer">Start Your DevNet Create 2021 with the “Start Now” Channel</a></h2>
+                        <p class="byline">By Paul Zimmerman</p>
+                        <p class="summary">An introduction to the Start Now track, with sessions and demos designed to help developers build confidence and new skills.</p>
+                        <a class="read-link" href="https://blogs.cisco.com/cisco-devnet/devnetcreatestartnow01" target="_blank" rel="noopener noreferrer" aria-label="Read blog: Start Your DevNet Create 2021 with the “Start Now” Channel">Read blog <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://blogs.cisco.com/cisco-devnet/start-now-at-devnet-create" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/devnet-create-2020.jpg" alt="Interested in Coding? Join “Start Now” at DevNet Create — Cisco Blogs" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Blogs <span aria-hidden="true">·</span> <time datetime="2020-09-15">September 15, 2020</time> <span class="article-kind">Blog</span></p>
+                        <h2><a href="https://blogs.cisco.com/cisco-devnet/start-now-at-devnet-create" target="_blank" rel="noopener noreferrer">Interested in Coding? Join “Start Now” at DevNet Create</a></h2>
+                        <p class="byline">By Paul Zimmerman</p>
+                        <p class="summary">An invitation to explore coding, network automation, and IoT through the beginner-friendly Start Now track at DevNet Create.</p>
+                        <a class="read-link" href="https://blogs.cisco.com/cisco-devnet/start-now-at-devnet-create" target="_blank" rel="noopener noreferrer" aria-label="Read blog: Interested in Coding? Join “Start Now” at DevNet Create">Read blog <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://blogs.cisco.com/cisco-devnet/got-code-goblins" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/code-goblins.jpg" alt="Got Code Goblins? Who Ya Gonna Call? — Cisco Blogs" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Blogs <span aria-hidden="true">·</span> <time datetime="2019-10-29">October 29, 2019</time> <span class="article-kind">Blog</span></p>
+                        <h2><a href="https://blogs.cisco.com/cisco-devnet/got-code-goblins" target="_blank" rel="noopener noreferrer">Got Code Goblins? Who Ya Gonna Call?</a></h2>
+                        <p class="byline">By Paul Zimmerman</p>
+                        <p class="summary">A tour of DevNet developer support, including technical forums, chat, and the knowledge base.</p>
+                        <a class="read-link" href="https://blogs.cisco.com/cisco-devnet/got-code-goblins" target="_blank" rel="noopener noreferrer" aria-label="Read blog: Got Code Goblins? Who Ya Gonna Call?">Read blog <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://blogs.cisco.com/cisco-devnet/community-platform-for-developers" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/articles/community-platform.png" alt="New Community Platform is a Win for Developers — Cisco Blogs" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Blogs <span aria-hidden="true">·</span> <time datetime="2018-09-10">September 10, 2018</time> <span class="article-kind">Blog</span></p>
+                        <h2><a href="https://blogs.cisco.com/cisco-devnet/community-platform-for-developers" target="_blank" rel="noopener noreferrer">New Community Platform is a Win for Developers</a></h2>
+                        <p class="byline">By Paul Zimmerman</p>
+                        <p class="summary">Introducing community forums that connect application developers and network engineers with Cisco experts.</p>
+                        <a class="read-link" href="https://blogs.cisco.com/cisco-devnet/community-platform-for-developers" target="_blank" rel="noopener noreferrer" aria-label="Read blog: New Community Platform is a Win for Developers">Read blog <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+        </ol>
+        <footer class="page-footer">
+            <p>You can also browse <a href="https://blogs.cisco.com/author/paulzimmerman" target="_blank" rel="noopener noreferrer">my author page on Cisco Blogs</a>.</p>
+            <a href="#top">Back to top ↑</a>
+        </footer>
+    </main>
+</body>
+</html>
