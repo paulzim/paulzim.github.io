@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="338" viewBox="0 0 600 338">
+<rect width="600" height="338" rx="12" fill="#e8f3f7"/>
+<path d="M495 0v338M0 270h600" stroke="#087ca3" stroke-opacity=".13"/>
+<path d="M54 54h76a12 12 0 0 1 12 12v38a12 12 0 0 1-12 12H88l-22 17v-17H54a12 12 0 0 1-12-12V66a12 12 0 0 1 12-12Z" fill="none" stroke="#087ca3" stroke-width="4"/>
+<circle cx="68" cy="85" r="4" fill="#087ca3"/><circle cx="92" cy="85" r="4" fill="#087ca3"/><circle cx="116" cy="85" r="4" fill="#087ca3"/>
+<text x="42" y="187" fill="#123e58" font-family="Arial,sans-serif" font-size="32" font-weight="700">Wireless in Hawaii</text>
+<text x="42" y="228" fill="#123e58" font-family="Arial,sans-serif" font-size="23">Trivia Tuesday</text>
+<text x="42" y="310" fill="#087ca3" font-family="Arial,sans-serif" font-size="17" letter-spacing="2">CISCO COMMUNITY</text>
+</svg>

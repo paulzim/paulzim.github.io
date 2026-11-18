@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="338" viewBox="0 0 600 338">
+<rect width="600" height="338" rx="12" fill="#102c46"/>
+<path d="M495 0v338M0 270h600" stroke="#75d8eb" stroke-opacity=".13"/>
+<path d="M54 54h76a12 12 0 0 1 12 12v38a12 12 0 0 1-12 12H88l-22 17v-17H54a12 12 0 0 1-12-12V66a12 12 0 0 1 12-12Z" fill="none" stroke="#75d8eb" stroke-width="4"/>
+<circle cx="68" cy="85" r="4" fill="#75d8eb"/><circle cx="92" cy="85" r="4" fill="#75d8eb"/><circle cx="116" cy="85" r="4" fill="#75d8eb"/>
+<text x="42" y="187" fill="#ffffff" font-family="Arial,sans-serif" font-size="32" font-weight="700">Controller Manager</text>
+<text x="42" y="228" fill="#ffffff" font-family="Arial,sans-serif" font-size="23">ML jobs → Kubernetes</text>
+<text x="42" y="310" fill="#75d8eb" font-family="Arial,sans-serif" font-size="17" letter-spacing="2">MICHELANGELO AI</text>
+</svg>

@@ -67,6 +67,7 @@ def test_discovers_top_level_html_files():
         "articles.html",
         "content.html",
         "community.html",
+        "community-content.html",
         "leadership.html",
         "developer-relations.html",
         "ai.html",

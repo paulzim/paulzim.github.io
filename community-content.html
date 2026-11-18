@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selected community content by Paul Zimmerman: technical walkthroughs, community onboarding, and developer conversations from Michelangelo AI and Cisco.">
+    <title>Community Content - Paul Zimmerman</title>
+    <link rel="icon" type="image/x-icon" href="pz_favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; color: #263744; background: linear-gradient(to bottom, #f0f0f0, #dcdcdc); }
+        .navbar { background-color: #333; display: flex; justify-content: center; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { display: block; color: #f2f2f2; text-align: center; padding: 14px 20px; text-decoration: none; }
+        .navbar a:hover { background-color: #ddd; color: black; }
+        a { color: #075b94; text-underline-offset: 3px; }
+        a:hover { color: #a44200; }
+        a:focus-visible { outline: 3px solid #087bb5; outline-offset: 5px; border-radius: 2px; }
+        .skip-link { position: absolute; left: 20px; top: -80px; padding: 10px 16px; background: white; z-index: 1001; }
+        .skip-link:focus { top: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .page-heading { padding: 30px 0 25px; }
+        .back-link { font-size: .9rem; }
+        h1 { font-family: 'Averia Libre', Arial, sans-serif; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.2; color: #072035; margin: 22px 0 12px; }
+        .intro { max-width: 700px; margin: 0; font-size: 1.05rem; }
+        .list-note { margin: 18px 0 0; font-size: .85rem; color: #52616b; }
+        .article-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+        .article-card { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 24px; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,.1); }
+        .thumbnail { display: block; align-self: start; border-radius: 6px; overflow: hidden; background: #edf2f5; }
+        .thumbnail img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; display: block; }
+        .article-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 9px; font-size: .8rem; color: #52616b; }
+        .article-kind { color: #31576f; background: #edf3f7; padding: 1px 7px; border-radius: 4px; margin-left: 2px; }
+        h2 { font-size: 1.25rem; line-height: 1.35; margin: 0 0 8px; }
+        h2 a { color: #072035; text-decoration: none; }
+        h2 a:hover { text-decoration: underline; }
+        .byline { font-size: .8rem; color: #52616b; margin: 0 0 10px; }
+        .summary { font-size: .95rem; margin: 0 0 12px; }
+        .read-link { font-size: .9rem; font-weight: bold; }
+        .page-footer { border-top: 1px solid #bfc7cc; margin-top: 32px; padding: 22px 0 34px; font-size: .9rem; }
+        .page-footer p { margin: 0 0 12px; }
+        .collection-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+        .collection-links a { display: inline-block; background: #fff; border: 1px solid #b6c8d3; border-radius: 6px; padding: 10px 14px; font-size: .9rem; font-weight: bold; text-decoration: none; }
+        .collection-links a:hover { border-color: #075b94; background: #f4f9fc; color: #075b94; }
+        .byline { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+        .article-kind { display: inline-block; }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .navbar { position: static; }
+            .navbar a { padding: 10px; font-size: .9rem; }
+            .article-card { grid-template-columns: 190px minmax(0, 1fr); padding: 18px; gap: 18px; }
+        }
+        @media (max-width: 580px) {
+            .article-card { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+            .page-heading { padding-top: 24px; }
+            h2 { font-size: 1.2rem; }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T57ZTPE67C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-T57ZTPE67C');
+    </script>
+</head>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to community content</a>
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="content.html">Content</a>
+        <a href="community.html">Community</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="developer-relations.html">Developer Relations</a>
+        <a href="ai.html">AI Enablement</a>
+        <a href="music.html">Music</a>
+    </nav>
+    <main class="container" id="main">
+        <header class="page-heading">
+            <a class="back-link" href="index.html">← Paul Zimmerman / Home</a>
+            <h1>Community Content</h1>
+            <p class="intro">Technical walkthroughs, community guidance, and conversations that help developers succeed. These selections bring together my work with the Michelangelo AI and Cisco communities.</p>
+            <div class="collection-links">
+                <a href="https://github.com/michelangelo-ai/michelangelo/discussions" target="_blank" rel="noopener noreferrer">Browse Michelangelo discussions <span aria-hidden="true">↗</span></a>
+                <a href="https://community.cisco.com/t5/user/viewprofilepage/user-id/317191" target="_blank" rel="noopener noreferrer">Browse my Cisco contributions <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="list-note">Eight selected posts · Newest first · Discussion and collection links open in a new tab.</p>
+        </header>
+        <!-- Add new entries at the top, using the original publication date. -->
+        <ol class="article-list" aria-label="Selected community posts, newest first">
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://github.com/michelangelo-ai/michelangelo/discussions/1821" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/community-content/sandbox-pipeline.png" alt="Michelangelo Studio showing a successful xgb_train pipeline run." width="600" height="338" loading="eager" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Michelangelo AI · GitHub <span aria-hidden="true">·</span> <time datetime="2026-08-14">August 14, 2026</time></p>
+                        <h2><a href="https://github.com/michelangelo-ai/michelangelo/discussions/1821" target="_blank" rel="noopener noreferrer">Works on My Sandbox: Verifying xgb_train End-to-End</a></h2>
+                        <p class="byline">By Paul Zimmerman <span class="article-kind">Technical walkthrough</span></p>
+                        <p class="summary">A hands-on account of running an ML pipeline from start to finish: explaining the steps, working through failures, and verifying the result.</p>
+                        <a class="read-link" href="https://github.com/michelangelo-ai/michelangelo/discussions/1821" target="_blank" rel="noopener noreferrer" aria-label="Read discussion: Works on My Sandbox: Verifying xgb_train End-to-End">Read discussion <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://github.com/michelangelo-ai/michelangelo/discussions/1601" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/community-content/controller-manager.svg" alt="Controller Manager — Michelangelo AI · GitHub" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Michelangelo AI · GitHub <span aria-hidden="true">·</span> <time datetime="2026-07-24">July 24, 2026</time></p>
+                        <h2><a href="https://github.com/michelangelo-ai/michelangelo/discussions/1601" target="_blank" rel="noopener noreferrer">Under the Hood: How Michelangelo&#x27;s Controller Manager Turns Job Specs into Native K8s Workloads</a></h2>
+                        <p class="byline">By Paul Zimmerman <span class="article-kind">Architecture explained</span></p>
+                        <p class="summary">Making platform architecture approachable by tracing how ML job specifications become Kubernetes workloads, then inviting feedback on developers’ operational needs.</p>
+                        <a class="read-link" href="https://github.com/michelangelo-ai/michelangelo/discussions/1601" target="_blank" rel="noopener noreferrer" aria-label="Read discussion: Under the Hood: How Michelangelo&#x27;s Controller Manager Turns Job Specs into Native K8s Workloads">Read discussion <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://github.com/michelangelo-ai/michelangelo/discussions/1267" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/community-content/community-welcome.svg" alt="Start here — Michelangelo AI · GitHub" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Michelangelo AI · GitHub <span aria-hidden="true">·</span> <time datetime="2026-06-03">June 3, 2026</time></p>
+                        <h2><a href="https://github.com/michelangelo-ai/michelangelo/discussions/1267" target="_blank" rel="noopener noreferrer">Welcome to the Michelangelo AI Community! Start Here</a></h2>
+                        <p class="byline">By Paul Zimmerman <span class="article-kind">Community onboarding</span></p>
+                        <p class="summary">A welcoming guide that helps new members find the right discussion space, ask questions, share their work, and participate constructively.</p>
+                        <a class="read-link" href="https://github.com/michelangelo-ai/michelangelo/discussions/1267" target="_blank" rel="noopener noreferrer" aria-label="Read discussion: Welcome to the Michelangelo AI Community! Start Here">Read discussion <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://community.cisco.com/t5/the-break-room/meme-monday-good-documentation/td-p/4896190" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/community-content/good-documentation.jpg" alt="A genie meme joking that good documentation is an impossible wish." width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Community <span aria-hidden="true">·</span> <time datetime="2023-07-31">July 31, 2023</time></p>
+                        <h2><a href="https://community.cisco.com/t5/the-break-room/meme-monday-good-documentation/td-p/4896190" target="_blank" rel="noopener noreferrer">Meme Monday: Good Documentation</a></h2>
+                        <p class="byline">By Paul Zimmerman <span class="article-kind">Community engagement</span></p>
+                        <p class="summary">Using humor to start a practical conversation about documentation, share useful resources, and invite developers to exchange their own recommendations.</p>
+                        <a class="read-link" href="https://community.cisco.com/t5/the-break-room/meme-monday-good-documentation/td-p/4896190" target="_blank" rel="noopener noreferrer" aria-label="Read discussion: Meme Monday: Good Documentation">Read discussion <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://community.cisco.com/t5/devnet-general-discussions/word-of-the-week-edge-ai/td-p/4892996" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/community-content/edge-ai.svg" alt="Edge AI — Cisco Community" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Community <span aria-hidden="true">·</span> <time datetime="2023-07-26">July 26, 2023</time></p>
+                        <h2><a href="https://community.cisco.com/t5/devnet-general-discussions/word-of-the-week-edge-ai/td-p/4892996" target="_blank" rel="noopener noreferrer">Word of the Week: Edge AI</a></h2>
+                        <p class="byline">By Paul Zimmerman <span class="article-kind">Technical education</span></p>
+                        <p class="summary">A short introduction to Edge AI that connects an emerging technical concept with familiar applications and invites discussion about its impact.</p>
+                        <a class="read-link" href="https://community.cisco.com/t5/devnet-general-discussions/word-of-the-week-edge-ai/td-p/4892996" target="_blank" rel="noopener noreferrer" aria-label="Read discussion: Word of the Week: Edge AI">Read discussion <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://community.cisco.com/t5/devnet-general-discussions/trivia-tuesday-spam-spam-spam-spam/td-p/4853896" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/community-content/spam-trivia.svg" alt="Spam, spam, spam — Cisco Community" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Community <span aria-hidden="true">·</span> <time datetime="2023-06-13">June 13, 2023</time></p>
+                        <h2><a href="https://community.cisco.com/t5/devnet-general-discussions/trivia-tuesday-spam-spam-spam-spam/td-p/4853896" target="_blank" rel="noopener noreferrer">Trivia Tuesday: Spam Spam Spam Spam</a></h2>
+                        <p class="byline">By Paul Zimmerman <span class="article-kind">Technology &amp; conversation</span></p>
+                        <p class="summary">An approachable look at spam’s history and risks, connecting internet trivia with security resources and inviting members to share experiences and advice.</p>
+                        <a class="read-link" href="https://community.cisco.com/t5/devnet-general-discussions/trivia-tuesday-spam-spam-spam-spam/td-p/4853896" target="_blank" rel="noopener noreferrer" aria-label="Read discussion: Trivia Tuesday: Spam Spam Spam Spam">Read discussion <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://community.cisco.com/t5/devnet-general-discussions/trivia-tuesday-wireless-surfing-in-hawaii/td-p/4811966" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/community-content/wireless-hawaii.svg" alt="Wireless in Hawaii — Cisco Community" width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Community <span aria-hidden="true">·</span> <time datetime="2023-04-11">April 11, 2023</time></p>
+                        <h2><a href="https://community.cisco.com/t5/devnet-general-discussions/trivia-tuesday-wireless-surfing-in-hawaii/td-p/4811966" target="_blank" rel="noopener noreferrer">Trivia Tuesday: Wireless Surfing in Hawaii</a></h2>
+                        <p class="byline">By Paul Zimmerman <span class="article-kind">Technology &amp; conversation</span></p>
+                        <p class="summary">A playful journey through ALOHAnet and wireless networking history that encourages members to reflect on how wireless technology has changed their work.</p>
+                        <a class="read-link" href="https://community.cisco.com/t5/devnet-general-discussions/trivia-tuesday-wireless-surfing-in-hawaii/td-p/4811966" target="_blank" rel="noopener noreferrer" aria-label="Read discussion: Trivia Tuesday: Wireless Surfing in Hawaii">Read discussion <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <a class="thumbnail" href="https://community.cisco.com/t5/the-break-room/meme-monday-i-like-my-coffee-like-i-like-my-code/td-p/4806823" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="files/community-content/coffee-code.png" alt="Coffee and code meme: powerful and bug-free." width="600" height="338" loading="lazy" decoding="async">
+                    </a>
+                    <div class="article-details">
+                        <p class="article-meta">Cisco Community <span aria-hidden="true">·</span> <time datetime="2023-04-03">April 3, 2023</time></p>
+                        <h2><a href="https://community.cisco.com/t5/the-break-room/meme-monday-i-like-my-coffee-like-i-like-my-code/td-p/4806823" target="_blank" rel="noopener noreferrer">Meme Monday: I like my coffee like I like my code</a></h2>
+                        <p class="byline">By Paul Zimmerman <span class="article-kind">Community engagement</span></p>
+                        <p class="summary">Starting with a coffee-and-code meme, then exploring the connections between coffee, IoT, and AI to spark a relatable community conversation.</p>
+                        <a class="read-link" href="https://community.cisco.com/t5/the-break-room/meme-monday-i-like-my-coffee-like-i-like-my-code/td-p/4806823" target="_blank" rel="noopener noreferrer" aria-label="Read discussion: Meme Monday: I like my coffee like I like my code">Read discussion <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </li>
+        </ol>
+        <footer class="page-footer">
+            <h2>Explore the full collections</h2>
+            <p>Visit the Michelangelo community’s discussions or browse my Cisco posting history.</p>
+            <div class="collection-links">
+                <a href="https://github.com/michelangelo-ai/michelangelo/discussions" target="_blank" rel="noopener noreferrer">Browse Michelangelo discussions <span aria-hidden="true">↗</span></a>
+                <a href="https://community.cisco.com/t5/user/viewprofilepage/user-id/317191" target="_blank" rel="noopener noreferrer">Browse my Cisco contributions <span aria-hidden="true">↗</span></a>
+            </div>
+            <a href="#top">Back to top ↑</a>
+        </footer>
+    </main>
+</body>
+</html>
